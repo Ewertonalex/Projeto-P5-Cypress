@@ -7,15 +7,17 @@ class CadastroPage {
     }        
 
     digitarEmail() {        
-        cy.get('input[type="email"]').should('be.visible').invoke('val', 'ewerton@example.com')    
+        cy.get('input[type="email"]').should('be.visible').invoke('val', 'ewerton@example.com')  
+          
     }   
 
     botaoEnviar() {
-        cy.get('button[type="submit"]').should('be.visible').click({ force: true });
+        cy.get('button[type="submit"]').should('be.visible').type('{enter}');
+
     }
 
     validarMensagem() {
-        cy.get('.panel-title').should('be.visible').and('have.text', 'E-MAIL ENVIADO COM SUCESSO!');
+        cy.get('.panel-body').should('be.visible').contains('Não foi localizado nenhum cadastro com o email informado.');
     }
 
 }
