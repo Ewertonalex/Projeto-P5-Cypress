@@ -17,4 +17,4 @@ Então não deve ser exibido nenhum resultado
 Cenario: Buscar curso com campo em branco
 Quando deixar o campo de busca em branco
 E clicar na botão de pesquisar
-Então deve ser feito um reload na página inicial
+Então deve ser feito um reload na página iniciall
