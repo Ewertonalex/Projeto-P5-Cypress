@@ -31,6 +31,12 @@ class AgenciaPage {
 
     }
 
+    validarCEPemBranco() {
+        cy.get('span.MuiTab-wrapper:contains("CEP")').click();
+        cy.get('.MuiGrid-grid-xs-5 > .MuiButtonBase-root').click();
+
+    }
+
     validarAgencias() {
         cy.get('span.MuiTypography-root').should('be.visible')
     }
@@ -46,6 +52,12 @@ class AgenciaPage {
         cy.get('.jss119')
             .should('be.visible')
             .and('contain', 'Não foi possível encontrar uma agência próxima ao CEP informado.');
+    }
+
+    validarMensagemCEPemBranco() {
+        cy.get('.MuiSnackbar-root')
+            .should('be.visible')
+            .and('contain', 'O CEP é obrigatório');
     }
 
 }

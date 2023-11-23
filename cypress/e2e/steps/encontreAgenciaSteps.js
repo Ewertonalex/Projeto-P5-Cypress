@@ -24,10 +24,19 @@ And("selecionar a localização por CEP com CEP inválido", () => {
     agenciaPage.validarCEPInvalido();
 });
 
+And("selecionar a localização por CEP com CEP em branco", () => {
+    agenciaPage.validarCEPemBranco();
+});
+
+
 Then("deve ser exibido as agencias do local", () => {
     agenciaPage.validarAgencias();
 });
 
 Then("deve ser exibida a mensagem de CEP inválido", () => {
     agenciaPage.validarMensagemCEPInvalido();
+});
+
+Then("deve ser exibida a mensagem de CEP obrigatório", () => {
+    agenciaPage.validarMensagemCEPemBranco();
 });
