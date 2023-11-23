@@ -10,6 +10,13 @@
 //
 //
 // -- This is a parent command --
+import 'cypress-downloadfile/lib/downloadFileCommand';
+
+Cypress.Commands.add('downloadFile', { prevSubject: 'element' }, (subject, downloadPath) => {
+    cy.wrap(subject).trigger('mousedown', { force: true });
+    cy.get('a[download]').downloadFile(downloadPath);
+  });
+
 Cypress.Commands.add('login', (username, password) => {
     cy.visit('https://www.saucedemo.com/')
     cy.get('[data-test="username"]').type(username)
