@@ -5,7 +5,7 @@ module.exports = defineConfig({
   projectId: 'q2yud3',
   e2e: {
 
-    baseUrl: 'https://www.escolavirtual.gov.br/',
+    baseUrl: 'https://meu.inss.gov.br/',
     specPattern: "**/*.feature",
 
     //definir resolução da janela
