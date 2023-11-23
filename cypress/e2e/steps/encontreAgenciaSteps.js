@@ -20,6 +20,14 @@ And("selecionar a localização por CEP", () => {
     agenciaPage.validarCEP();
 });
 
+And("selecionar a localização por CEP com CEP inválido", () => {
+    agenciaPage.validarCEPInvalido();
+});
+
 Then("deve ser exibido as agencias do local", () => {
     agenciaPage.validarAgencias();
+});
+
+Then("deve ser exibida a mensagem de CEP inválido", () => {
+    agenciaPage.validarMensagemCEPInvalido();
 });

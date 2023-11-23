@@ -20,7 +20,14 @@ class AgenciaPage {
     validarCEP() {
         cy.get('span.MuiTab-wrapper:contains("CEP")').click();
         cy.get('#cep').type('58051120');
-        cy.get('.MuiGrid-grid-xs-5 > .MuiButtonBase-root')
+        cy.get('.MuiGrid-grid-xs-5 > .MuiButtonBase-root').click();
+
+    }
+
+    validarCEPInvalido() {
+        cy.get('span.MuiTab-wrapper:contains("CEP")').click();
+        cy.get('#cep').type('00000000');
+        cy.get('.MuiGrid-grid-xs-5 > .MuiButtonBase-root').click();
 
     }
 
@@ -33,6 +40,12 @@ class AgenciaPage {
             .should('be.visible')
             .and('contain', 'AGÊNCIA DA PREVIDÊNCIA SOCIAL JOÃO PESSOA - SUL');
 
+    }
+
+    validarMensagemCEPInvalido() {
+        cy.get('.jss119')
+            .should('be.visible')
+            .and('contain', 'Não foi possível encontrar uma agência próxima ao CEP informado.');
     }
 
 }

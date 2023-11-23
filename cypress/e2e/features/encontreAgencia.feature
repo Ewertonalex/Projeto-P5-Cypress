@@ -1,4 +1,4 @@
-#language: pt
+# language: pt
 Funcionalidade: Encontrar Agencia
 
 Contexto:
@@ -13,3 +13,8 @@ Cenario: Encontrar Agencia por CEP
 Quando clicar no ícone Encontre uma agencia
 E selecionar a localização por CEP
 Então deve ser exibido as agencias do local
+
+Cenario: Encontrar Agencia por CEP inválido
+Quando clicar no ícone Encontre uma agencia
+E selecionar a localização por CEP com CEP inválido
+Então deve ser exibida a mensagem de CEP inválido
