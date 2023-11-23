@@ -13,9 +13,17 @@ When("clicar no filtro Nome da Instituição", () => {
     taxaPage.filtroAlfabetica();
 });
 
+Then("deve ser exibido a lista agencias por ordem alfabética", () => {
+    taxaPage.validarOrdemAlfabetica();
+});
+
 When("clicar no filtro por Taxa de juros", () => {
     taxaPage.iconeTaxa();
     taxaPage.filtroTaxa();
+});
+
+Then("deve ser exibido a lista agencias por taxa de juros", () => {
+    taxaPage.validarOrdemTaxa();
 });
 
 When("digitar uma agência por nome {string}", (agencia) => {
@@ -23,30 +31,22 @@ When("digitar uma agência por nome {string}", (agencia) => {
     taxaPage.buscarAgencia(agencia);
 });
 
+Then("deve ser exibido a agencia pesquisada", () => {
+    taxaPage.validarAgenciaPesquisa();
+});
+
 When("digitar uma agência por nome inexistente {string}", (termo) => {
     taxaPage.iconeTaxa();
     taxaPage.buscarAgenciaInexistente(termo);
 });
 
+Then("deve ser exibido a mensagem 0 instituições encontradas", () => {
+    taxaPage.validarAgenciaInexistente();
+});
+
 When("clicar no botão Voltar", () => {
     taxaPage.iconeTaxa();
     taxaPage.botaoVoltar();
-});
-
-Then("deve ser exibido a lista agencias por ordem alfabética", () => {
-    taxaPage.validarOrdemAlfabetica();
-});
-
-Then("deve ser exibido a lista agencias por taxa de juros", () => {
-    taxaPage.validarOrdemTaxa();
-});
-
-Then("deve ser exibido a agencia pesquisada", () => {
-    taxaPage.validarAgenciaPesquisa();
-});
-
-Then("deve ser exibido a mensagem 0 instituições encontradas", () => {
-    taxaPage.validarAgenciaInexistente();
 });
 
 Then("deve retornar para a página inicial", () => {
