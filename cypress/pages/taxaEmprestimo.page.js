@@ -41,6 +41,18 @@ class TaxaPage {
         cy.contains('.jss80', '0 instituições encontradas').should('be.visible');
     }
 
+    botaoVoltar() {
+        cy.get('.MuiBox-root > .MuiButtonBase-root')
+            .contains('Voltar')
+            .click();
+
+    }
+
+    validarRetornoPagina() {
+        cy.url().should('eq', 'https://meu.inss.gov.br/#/login');
+
+    }
+
 }
 
 export const taxaPage = new TaxaPage()

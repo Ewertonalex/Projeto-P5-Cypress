@@ -19,3 +19,7 @@ Então deve ser exibido a agencia pesquisada
 Cenario: Buscar Agencia inexistente
 Quando digitar uma agência por nome inexistente "xxxxx"
 Então deve ser exibido a mensagem 0 instituições encontradas
+
+Cenario: Validar botão Voltar
+Quando clicar no botão Voltar
+Então deve retornar para a página inicial

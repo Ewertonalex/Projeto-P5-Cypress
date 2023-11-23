@@ -28,6 +28,11 @@ When("digitar uma agência por nome inexistente {string}", (termo) => {
     taxaPage.buscarAgenciaInexistente(termo);
 });
 
+When("clicar no botão Voltar", () => {
+    taxaPage.iconeTaxa();
+    taxaPage.botaoVoltar();
+});
+
 Then("deve ser exibido a lista agencias por ordem alfabética", () => {
     taxaPage.validarOrdemAlfabetica();
 });
@@ -42,4 +47,8 @@ Then("deve ser exibido a agencia pesquisada", () => {
 
 Then("deve ser exibido a mensagem 0 instituições encontradas", () => {
     taxaPage.validarAgenciaInexistente();
+});
+
+Then("deve retornar para a página inicial", () => {
+    taxaPage.validarRetornoPagina();
 });
