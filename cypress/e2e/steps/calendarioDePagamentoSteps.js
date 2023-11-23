@@ -13,7 +13,16 @@ When("clicar no icone Calendário de Pagamento", () => {
     
 });
 
-Then("deve ser realizado download de aquirvo PDF de pagamentos", () => {
+And("na de caledario clicar no botão de tela inicial", () => {
+    calendarioPage.botaoTelaInicial();
+    
+});
+
+Then("deve ser exibido a mensagem Calendário gerado com sucesso na tela de calendario", () => {
     calendarioPage.validarDonwload();
+});
+
+Then("deve retornar a tela inical", () => {
+    calendarioPage.validarRetornoPagina();
 });
 
