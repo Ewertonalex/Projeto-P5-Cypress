@@ -45,7 +45,6 @@ class TaxaPage {
         cy.get('.MuiBox-root > .MuiButtonBase-root')
             .contains('Voltar')
             .click();
-
     }
 
     validarRetornoPagina() {
