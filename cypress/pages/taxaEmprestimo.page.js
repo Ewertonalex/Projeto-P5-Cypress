@@ -34,7 +34,7 @@ class TaxaPage {
     }
 
     validarAgenciaPesquisa() {
-        cy.contains('.jss269', 'SICOOB COOPERNAPI').should('be.visible');
+        cy.contains('.jss119', 'SICOOB COOPERNAPI').should('be.visible');
     }
 
     validarAgenciaInexistente() {
