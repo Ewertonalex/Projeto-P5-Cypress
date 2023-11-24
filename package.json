@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:report": "npx cypress run --record --key ea474b97-08fa-4e78-a1b8-c0786bd230ae"
+    "generate:report": "node ./scripts/generate-html-report.js",
+    "cy:report": "npx cypress run --record --key ea474b97-08fa-4e78-a1b8-c0786bd230ae && npm run generate:report"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cucumber-html-reporter": "^7.1.1",
     "cypress": "^13.3.1",
-    "cypress-downloadfile": "^1.2.3"
+    "cypress-downloadfile": "^1.2.3",
+    "multiple-cucumber-html-reporter": "^3.5.0"
   },
   "dependencies": {
     "@faker-js/faker": "^8.2.0",

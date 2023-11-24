@@ -17,6 +17,8 @@ Cypress.Commands.add('downloadFile', { prevSubject: 'element' }, (subject, downl
     cy.get('a[download]').downloadFile(downloadPath);
   });
 
+  
+
 Cypress.Commands.add('login', (username, password) => {
     cy.visit('https://www.saucedemo.com/')
     cy.get('[data-test="username"]').type(username)
