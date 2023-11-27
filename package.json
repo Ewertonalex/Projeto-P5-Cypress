@@ -1,7 +1,7 @@
 {
-  "name": "cypress-inova",
+  "name": "cypress-p5-bdd",
   "version": "1.0.0",
-  "description": "Cypress Inova com BDD!",
+  "description": "Projeto Integrado de Qualidade de Software",
   "main": "index.js",
   "scripts": {
     "cy:open": "npx cypress open",
