@@ -28,7 +28,7 @@ _O projeto concentra-se na construção de uma estrutura robusta de automação 
 - Empregar o padrão Page Objects para facilitar a manutenção e escalabilidade dos testes.
 - Promover a colaboração eficiente entre membros da equipe na execução e desenvolvimento de testes automatizados.
 
-### 1.1 Vídeo de Apresentração do Projeto
+### 1.1 Vídeo de Apresentação do Projeto
 
 
 ## 2 Pré-requisitos
