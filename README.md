@@ -31,7 +31,9 @@ _O projeto concentra-se na construção de uma estrutura robusta de automação 
 ### 1.1 Vídeo de Apresentação do Projeto
 
 * <strong>Apresentação:</strong><br>Clique para Assistir 👇 <br>
-[<img src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo.png" width=220><br>](https://git-scm.com/downloads)<br>
+[<img src="https://1000logos.net/wp-content/uploads/2021/04/YouTube-logo.png" width=220><br>](https://www.youtube.com/watch?v=ht44TG5Z34I)<br>
+
+**https://www.youtube.com/watch?v=ht44TG5Z34I**
 
 
 
