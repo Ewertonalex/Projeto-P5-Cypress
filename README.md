@@ -62,7 +62,7 @@ npm run {scriptName}
 
 ## 5 Estrutura do projeto
 
-_Explicar a estrutura do projeto visando o seu crescimento de maneira organizada e seguindo os padrões estabelecidos._
+
 
 ### 5.1 Pastas
 | Nome | Função |
