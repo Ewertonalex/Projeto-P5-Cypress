@@ -3,6 +3,7 @@ class CalendarioPage {
 
     acessarSite() {
         cy.visit('https://meu.inss.gov.br/')
+        cy.wait(5000) 
     }       
 
     iconeCalendario() {        

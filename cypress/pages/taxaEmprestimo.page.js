@@ -2,11 +2,12 @@ class TaxaPage {
     
 
     acessarSite() {
-        cy.visit('https://meu.inss.gov.br/')             
+        cy.visit('https://meu.inss.gov.br/')
+        cy.wait(5000)             
     }
     
     iconeTaxa() {        
-        cy.get('.jss62').click();         
+        cy.get('.jss61').click();         
     }  
 
     filtroAlfabetica() {
@@ -22,7 +23,7 @@ class TaxaPage {
     }
 
     validarOrdemTaxa() {
-        cy.contains('.jss174', 'BANCO ARBI S A').should('be.visible');
+        cy.contains('.jss174', 'BANCO COOPERATIVO DO BRASIL BANCOOB').should('be.visible');
     }
 
     buscarAgencia(agencia) {

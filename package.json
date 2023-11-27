@@ -1,27 +1,31 @@
 {
-  "name": "cypress-aula",
+  "name": "cypress-inova",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cypress Inova com BDD!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate:report": "node ./scripts/generate-html-report.js",
-    "cy:report": "npx cypress run --record --key ea474b97-08fa-4e78-a1b8-c0786bd230ae && npm run generate:report"
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "report:gen": "node ./cypress/multiple-cucumber-html-reporter.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cucumber-html-reporter": "^7.1.1",
-    "cypress": "^13.3.1",
-    "cypress-downloadfile": "^1.2.3",
-    "multiple-cucumber-html-reporter": "^3.5.0"
+    "cypress": "^13.5.1"
   },
   "dependencies": {
-    "@faker-js/faker": "^8.2.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.5.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "step_definitions": "cypress/e2e/steps"
+    "step_definitions": "cypress/e2e/steps",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }

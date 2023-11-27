@@ -10,28 +10,7 @@
 //
 //
 // -- This is a parent command --
-import 'cypress-downloadfile/lib/downloadFileCommand';
-
-Cypress.Commands.add('downloadFile', { prevSubject: 'element' }, (subject, downloadPath) => {
-    cy.wrap(subject).trigger('mousedown', { force: true });
-    cy.get('a[download]').downloadFile(downloadPath);
-  });
-
-  
-
-Cypress.Commands.add('login', (username, password) => {
-    cy.visit('https://www.saucedemo.com/')
-    cy.get('[data-test="username"]').type(username)
-    cy.get('[data-test="password"]').type(password)
-    cy.get('[data-test="login-button"]').click()
-})
-
-Cypress.Commands.add('logar', () => {
-    cy.visit('/')
-    cy.get('[data-test="username"]').type('standard_user')
-    cy.get('[data-test="password"]').type('secret_sauce')
-    cy.get('[data-test="login-button"]').click()
-})
+// Cypress.Commands.add('login', (email, password) => { ... })
 //
 //
 // -- This is a child command --
