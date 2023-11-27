@@ -46,6 +46,16 @@ Cypress | Biblioteca de testes automatizados multicamada | [Link aqui](https://d
 cypress cucumber preprocessor | Aplicação de Cucumber para Cypress permitindo utilização de arquivos _.feature_ contendo as instruções do teste em Gherkin | [Link aqui](https://www.npmjs.com/package/cypress-cucumber-preprocessor)
 multiple cucumber html reporter | Gera reports em HTML contendo dados da execução dos testes e seus resultados | [Link aqui](https://www.npmjs.com/package/multiple-cucumber-html-reporter)
 
+<div align="center">
+
+<img src="https://uploaddeimagens.com.br/images/004/675/091/full/Captura_de_tela_de_2023-11-27_11-33-27.png?1701095880" width=480>
+
+![-----------------------------------------------------](
+https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png
+)
+  
+</div>
+
 
 ## 4 Scripts
 
