@@ -18,6 +18,12 @@ class AgenciaPage {
 
     }
 
+    validarEnderecoEmBranco() {        
+        cy.get('span.MuiTab-wrapper:contains("Endereço")').click();
+        cy.get('[style="text-align: center; margin-top: 20px;"] > .MuiButtonBase-root > .MuiButton-label').click();
+
+    }
+
     validarCEP() {
         cy.get('span.MuiTab-wrapper:contains("CEP")').click();
         cy.get('#cep').type('58051120');
@@ -59,6 +65,12 @@ class AgenciaPage {
         cy.get('.MuiSnackbar-root')
             .should('be.visible')
             .and('contain', 'O CEP é obrigatório');
+    }
+
+    validarMensagemEnderecoEmBranco() {
+        cy.get('.jss118')
+            .should('be.visible')
+            .and('contain', 'O município é obrigatório.');
     }
 
 }
