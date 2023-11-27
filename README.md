@@ -68,7 +68,7 @@ npm run {scriptName}
 |----|----|
 **cy:open** | Abre o runner do Cypress com painel que permite analizar passo-a-passo a execussão dos testes e acessar os dados trafegados via browser e funcionalidade de time lapse dinâmico;
 **cy:run** | Executa os testes em modo _headless_.
-**report:gen** | Gera o relatórios dos testes executados.
+**report:gen** | Gera o relatório dos testes executados.
 
 ## 5 Estrutura do projeto
 
