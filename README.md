@@ -3,6 +3,7 @@
 <h2>Sumário</h2>
 
 - [1 Apresentação](#1-apresentação)
+  - [1.1 Vídeo de Apresentação](#11-vídeo-de-apresentação-do-projeto)
 - [2 Pré-requisitos](#2-pré-requisitos)
 - [3 Dependências](#3-dependências)
 - [4 Scripts](#4-scripts)
@@ -26,6 +27,8 @@ _O projeto concentra-se na construção de uma estrutura robusta de automação 
 - Utilizar práticas de BDD e Gherkin para uma especificação clara e compreensível dos testes.
 - Empregar o padrão Page Objects para facilitar a manutenção e escalabilidade dos testes.
 - Promover a colaboração eficiente entre membros da equipe na execução e desenvolvimento de testes automatizados.
+
+### 1.1 Vídeo de Apresentração do Projeto
 
 
 ## 2 Pré-requisitos
