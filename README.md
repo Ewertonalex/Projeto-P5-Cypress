@@ -3,7 +3,7 @@
 <h2>Sumário</h2>
 
 - [1 Apresentação](#1-apresentação)
-  - [1.1 Vídeo de Apresentação](#11-vídeo-de-apresentação-do-projeto)
+  - [1.1 Vídeo de Apresentação do Projeto](#11-vídeo-de-apresentação-do-projeto)
 - [2 Pré-requisitos](#2-pré-requisitos)
 - [3 Dependências](#3-dependências)
 - [4 Scripts](#4-scripts)
