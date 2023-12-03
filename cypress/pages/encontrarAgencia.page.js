@@ -3,7 +3,7 @@ class AgenciaPage {
 
     acessarSite() {
         cy.visit('https://meu.inss.gov.br/')
-        cy.wait(10000) 
+         
     }       
 
     iconeAgencia() {        

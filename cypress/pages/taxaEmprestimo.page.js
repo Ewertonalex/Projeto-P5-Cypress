@@ -3,7 +3,7 @@ class TaxaPage {
 
     acessarSite() {
         cy.visit('https://meu.inss.gov.br/')
-        cy.wait(5000)             
+        //cy.wait(5000)             
     }
     
     iconeTaxa() {        
@@ -23,7 +23,7 @@ class TaxaPage {
     }
 
     validarOrdemTaxa() {
-        cy.contains('.jss174', 'BANCO COOPERATIVO DO BRASIL BANCOOB').should('be.visible');
+        cy.contains('.jss174', 'BANCO ARBI S A').should('be.visible');
     }
 
     buscarAgencia(agencia) {
